@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="40275" started-at="2017-11-30T09:15:39Z" finished-at="2017-11-30T09:16:20Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="40275" started-at="2017-11-30T09:15:39Z" finished-at="2017-11-30T09:16:20Z">
+      <class name="Buban">
+        <test-method status="PASS" signature="doBeforeMethod()[pri:0, instance:Buban@51081592]" name="doBeforeMethod" is-config="true" duration-ms="11202" started-at="2017-11-30T17:15:39Z" finished-at="2017-11-30T17:15:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeMethod -->
+        <test-method status="PASS" signature="login()[pri:0, instance:Buban@51081592]" name="login" is-config="true" duration-ms="11438" started-at="2017-11-30T17:15:51Z" depends-on-methods="com.webtest.core.BaseTest.doBeforeMethod" finished-at="2017-11-30T17:16:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="Mykaoqin()[pri:0, instance:Buban@51081592]" name="Mykaoqin" duration-ms="3523" started-at="2017-11-30T17:16:02Z" finished-at="2017-11-30T17:16:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mykaoqin -->
+        <test-method status="PASS" signature="buban()[pri:0, instance:Buban@51081592]" name="buban" duration-ms="6642" started-at="2017-11-30T17:16:06Z" depends-on-methods="Buban.Mykaoqin" finished-at="2017-11-30T17:16:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buban -->
+        <test-method status="PASS" signature="addbu3()[pri:0, instance:Buban@51081592]" name="addbu3" duration-ms="7434" started-at="2017-11-30T17:16:12Z" depends-on-methods="Buban.buban" finished-at="2017-11-30T17:16:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addbu3 -->
+      </class> <!-- Buban -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
