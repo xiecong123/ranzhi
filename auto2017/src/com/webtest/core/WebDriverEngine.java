@@ -28,7 +28,8 @@ import com.webtest.util.Log;
 
 public class WebDriverEngine {
 
-	WebDriver driver = null;
+	public WebDriver driver = null;
+	Actions action =null;
 	ElementFinder finder = null;
 	public Object typeAndClear;
 	
@@ -120,6 +121,15 @@ public class WebDriverEngine {
 	public boolean isChecked(String locator) {
 		WebElement element = finder.findElement(locator);
 		return element.isSelected();
+	}
+	
+	public void immediatelyclick(String locator) {
+
+		WebElement element = finder.findElement(locator);
+		if (element != null) {
+			element.click();
+			this.pause(1000);
+		}
 	}
 
 	public void click(String locator) {
@@ -270,5 +280,18 @@ public class WebDriverEngine {
 		}
 		driver.switchTo().window(windows.get(i));
 	}
+	public void enter() {
+		
+		action.keyDown(Keys.ENTER).perform();
+	}
+	public void tabPress() {
+
+    	action.sendKeys(Keys.TAB);
+	}
+	public void actionSendKeys(String content) {
+		
+    	action.sendKeys(content).perform();
+	}
+	
 
 }

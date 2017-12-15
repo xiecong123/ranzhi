@@ -1,33 +1,1170 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="5" failed="9" total="51" passed="37">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40275" started-at="2017-11-30T09:15:39Z" finished-at="2017-11-30T09:16:20Z">
+  <suite name="Suite" duration-ms="584859" started-at="2017-12-15T04:32:06Z" finished-at="2017-12-15T04:41:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40275" started-at="2017-11-30T09:15:39Z" finished-at="2017-11-30T09:16:20Z">
-      <class name="Buban">
-        <test-method status="PASS" signature="doBeforeMethod()[pri:0, instance:Buban@51081592]" name="doBeforeMethod" is-config="true" duration-ms="11202" started-at="2017-11-30T17:15:39Z" finished-at="2017-11-30T17:15:51Z">
+    <test name="Test" duration-ms="584859" started-at="2017-12-15T04:32:06Z" finished-at="2017-12-15T04:41:51Z">
+      <class name="com.test.Buban">
+        <test-method status="PASS" signature="doBeforeMethod()[pri:0, instance:com.test.Buban@2d6a9952]" name="doBeforeMethod" is-config="true" duration-ms="8234" started-at="2017-12-15T12:33:19Z" finished-at="2017-12-15T12:33:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBeforeMethod -->
-        <test-method status="PASS" signature="login()[pri:0, instance:Buban@51081592]" name="login" is-config="true" duration-ms="11438" started-at="2017-11-30T17:15:51Z" depends-on-methods="com.webtest.core.BaseTest.doBeforeMethod" finished-at="2017-11-30T17:16:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="Mykaoqin()[pri:0, instance:Buban@51081592]" name="Mykaoqin" duration-ms="3523" started-at="2017-11-30T17:16:02Z" finished-at="2017-11-30T17:16:06Z">
+        <test-method status="PASS" signature="Mykaoqin()[pri:0, instance:com.test.Buban@2d6a9952]" name="Mykaoqin" duration-ms="17875" started-at="2017-12-15T12:33:27Z" finished-at="2017-12-15T12:33:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Mykaoqin -->
-        <test-method status="PASS" signature="buban()[pri:0, instance:Buban@51081592]" name="buban" duration-ms="6642" started-at="2017-11-30T17:16:06Z" depends-on-methods="Buban.Mykaoqin" finished-at="2017-11-30T17:16:12Z">
+        <test-method status="PASS" signature="zengbu4()[pri:0, instance:com.test.Buban@2d6a9952]" name="zengbu4" duration-ms="22518" started-at="2017-12-15T12:33:45Z" finished-at="2017-12-15T12:34:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zengbu4 -->
+        <test-method status="FAIL" signature="abuban()[pri:0, instance:com.test.Buban@2d6a9952]" name="abuban" duration-ms="3024" started-at="2017-12-15T12:34:08Z" depends-on-methods="com.test.Buban.Mykaoqin" finished-at="2017-12-15T12:34:11Z">
+          <exception class="org.openqa.selenium.NoSuchFrameException">
+            <message>
+              <![CDATA[No frame element found by name or id iframe-2
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: 'LENOVO', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id iframe-2
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: 'LENOVO', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:925)
+	at com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:59)
+	at com.test.Buban.abuban(Buban.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abuban -->
+        <test-method status="SKIP" signature="abuban12()[pri:0, instance:com.test.Buban@2d6a9952]" name="abuban12" duration-ms="0" started-at="2017-12-15T12:34:11Z" depends-on-methods="com.test.Buban.abuban" finished-at="2017-12-15T12:34:11Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Buban.abuban12()[pri:0, instance:com.test.Buban@2d6a9952] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Buban.abuban12()[pri:0, instance:com.test.Buban@2d6a9952] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abuban12 -->
+        <test-method status="SKIP" signature="achabu()[pri:0, instance:com.test.Buban@2d6a9952]" name="achabu" duration-ms="0" started-at="2017-12-15T12:34:11Z" depends-on-methods="com.test.Buban.abuban" finished-at="2017-12-15T12:34:11Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Buban.achabu()[pri:0, instance:com.test.Buban@2d6a9952] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Buban.achabu()[pri:0, instance:com.test.Buban@2d6a9952] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- achabu -->
+        <test-method status="SKIP" signature="zengbu3()[pri:0, instance:com.test.Buban@2d6a9952]" name="zengbu3" duration-ms="0" started-at="2017-12-15T12:34:11Z" depends-on-methods="com.test.Buban.abuban" finished-at="2017-12-15T12:34:11Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Buban.zengbu3()[pri:0, instance:com.test.Buban@2d6a9952] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Buban.zengbu3()[pri:0, instance:com.test.Buban@2d6a9952] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zengbu3 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.test.Buban@2d6a9952]" name="doAfterMethod" is-config="true" duration-ms="9882" started-at="2017-12-15T12:34:11Z" finished-at="2017-12-15T12:34:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="zengbu1()[pri:0, instance:com.test.Buban@2d6a9952]" name="zengbu1" duration-ms="0" started-at="2017-12-15T12:34:11Z" depends-on-methods="com.test.Buban.abuban" finished-at="2017-12-15T12:34:11Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Buban.zengbu1()[pri:0, instance:com.test.Buban@2d6a9952] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Buban.zengbu1()[pri:0, instance:com.test.Buban@2d6a9952] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zengbu1 -->
+        <test-method status="SKIP" signature="zengbu2()[pri:0, instance:com.test.Buban@2d6a9952]" name="zengbu2" duration-ms="0" started-at="2017-12-15T12:34:11Z" depends-on-methods="com.test.Buban.abuban" finished-at="2017-12-15T12:34:11Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Buban.zengbu2()[pri:0, instance:com.test.Buban@2d6a9952] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Buban.zengbu2()[pri:0, instance:com.test.Buban@2d6a9952] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zengbu2 -->
+      </class> <!-- com.test.Buban -->
+      <class name="com.test.Tuandui">
+        <test-method status="PASS" signature="doBeforeMethod()[pri:0, instance:com.test.Tuandui@c39f790]" name="doBeforeMethod" is-config="true" duration-ms="6666" started-at="2017-12-15T12:37:36Z" finished-at="2017-12-15T12:37:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeMethod -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.test.Tuandui@c39f790]" name="login" duration-ms="10271" started-at="2017-12-15T12:37:43Z" finished-at="2017-12-15T12:37:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="qukuai()[pri:1, instance:com.test.Tuandui@c39f790]" name="qukuai" duration-ms="17059" started-at="2017-12-15T12:37:53Z" finished-at="2017-12-15T12:38:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- qukuai -->
+        <test-method status="PASS" signature="bianqu()[pri:2, instance:com.test.Tuandui@c39f790]" name="bianqu" duration-ms="12644" started-at="2017-12-15T12:38:10Z" finished-at="2017-12-15T12:38:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bianqu -->
+        <test-method status="FAIL" signature="findbo()[pri:3, instance:com.test.Tuandui@c39f790]" name="findbo" duration-ms="5017" started-at="2017-12-15T12:38:23Z" finished-at="2017-12-15T12:38:28Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.test.Tuandui.findbo(Tuandui.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findbo -->
+        <test-method status="PASS" signature="soutong()[pri:4, instance:com.test.Tuandui@c39f790]" name="soutong" duration-ms="7722" started-at="2017-12-15T12:38:28Z" finished-at="2017-12-15T12:38:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- soutong -->
+        <test-method status="PASS" signature="company()[pri:5, instance:com.test.Tuandui@c39f790]" name="company" duration-ms="3620" started-at="2017-12-15T12:38:36Z" finished-at="2017-12-15T12:38:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- company -->
+        <test-method status="PASS" signature="addzikuai()[pri:6, instance:com.test.Tuandui@c39f790]" name="addzikuai" duration-ms="8304" started-at="2017-12-15T12:38:39Z" finished-at="2017-12-15T12:38:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addzikuai -->
+        <test-method status="PASS" signature="bianzikuai()[pri:7, instance:com.test.Tuandui@c39f790]" name="bianzikuai" duration-ms="5436" started-at="2017-12-15T12:38:48Z" finished-at="2017-12-15T12:38:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bianzikuai -->
+        <test-method status="FAIL" signature="delzikuai()[pri:8, instance:com.test.Tuandui@c39f790]" name="delzikuai" duration-ms="162" started-at="2017-12-15T12:38:53Z" finished-at="2017-12-15T12:38:53Z">
+          <exception class="org.openqa.selenium.NoAlertPresentException">
+            <message>
+              <![CDATA[No modal dialog is currently open
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: 'LENOVO', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\pc\AppData\Local\Temp\rust_mozprofile.44pTJbrnGuf2, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0.3, platformVersion=10.0, moz:processID=1420, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 85368e41-79a2-4e40-bc81-244c1d9ba929]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoAlertPresentException: No modal dialog is currently open
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: 'LENOVO', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\pc\AppData\Local\Temp\rust_mozprofile.44pTJbrnGuf2, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0.3, platformVersion=10.0, moz:processID=1420, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 85368e41-79a2-4e40-bc81-244c1d9ba929
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:972)
+	at com.webtest.core.WebDriverEngine.getAlert(WebDriverEngine.java:209)
+	at com.test.Tuandui.delzikuai(Tuandui.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delzikuai -->
+        <test-method status="FAIL" signature="delbo()[pri:9, instance:com.test.Tuandui@c39f790]" name="delbo" duration-ms="3730" started-at="2017-12-15T12:38:53Z" finished-at="2017-12-15T12:38:57Z">
+          <exception class="org.openqa.selenium.NoAlertPresentException">
+            <message>
+              <![CDATA[No modal dialog is currently open
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: 'LENOVO', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\pc\AppData\Local\Temp\rust_mozprofile.44pTJbrnGuf2, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0.3, platformVersion=10.0, moz:processID=1420, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 85368e41-79a2-4e40-bc81-244c1d9ba929]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoAlertPresentException: No modal dialog is currently open
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: 'LENOVO', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\pc\AppData\Local\Temp\rust_mozprofile.44pTJbrnGuf2, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0.3, platformVersion=10.0, moz:processID=1420, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 85368e41-79a2-4e40-bc81-244c1d9ba929
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:972)
+	at com.webtest.core.WebDriverEngine.getAlert(WebDriverEngine.java:209)
+	at com.test.Tuandui.delbo(Tuandui.java:137)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delbo -->
+        <test-method status="PASS" signature="bianbo()[pri:10, instance:com.test.Tuandui@c39f790]" name="bianbo" duration-ms="8180" started-at="2017-12-15T12:38:57Z" finished-at="2017-12-15T12:39:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bianbo -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.test.Tuandui@c39f790]" name="doAfterMethod" is-config="true" duration-ms="2752" started-at="2017-12-15T12:39:05Z" finished-at="2017-12-15T12:39:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.test.Tuandui -->
+      <class name="com.test.Tiaoxiu">
+        <test-method status="PASS" signature="doBeforeMethod()[pri:0, instance:com.test.Tiaoxiu@5f150435]" name="doBeforeMethod" is-config="true" duration-ms="7128" started-at="2017-12-15T12:40:14Z" finished-at="2017-12-15T12:40:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeMethod -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.test.Tiaoxiu@5f150435]" name="login" duration-ms="16679" started-at="2017-12-15T12:40:22Z" finished-at="2017-12-15T12:40:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="Mykaoqin()[pri:1, instance:com.test.Tiaoxiu@5f150435]" name="Mykaoqin" duration-ms="3400" started-at="2017-12-15T12:40:38Z" finished-at="2017-12-15T12:40:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mykaoqin -->
+        <test-method status="PASS" signature="buban()[pri:2, instance:com.test.Tiaoxiu@5f150435]" name="buban" duration-ms="7183" started-at="2017-12-15T12:40:42Z" finished-at="2017-12-15T12:40:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buban -->
-        <test-method status="PASS" signature="addbu3()[pri:0, instance:Buban@51081592]" name="addbu3" duration-ms="7434" started-at="2017-11-30T17:16:12Z" depends-on-methods="Buban.buban" finished-at="2017-11-30T17:16:20Z">
+        <test-method status="PASS" signature="addbu1()[pri:3, instance:com.test.Tiaoxiu@5f150435]" name="addbu1" duration-ms="18963" started-at="2017-12-15T12:40:49Z" finished-at="2017-12-15T12:41:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addbu3 -->
-      </class> <!-- Buban -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- addbu1 -->
+        <test-method status="PASS" signature="addbu2()[pri:4, instance:com.test.Tiaoxiu@5f150435]" name="addbu2" duration-ms="11047" started-at="2017-12-15T12:41:08Z" finished-at="2017-12-15T12:41:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addbu2 -->
+        <test-method status="PASS" signature="chebu()[pri:5, instance:com.test.Tiaoxiu@5f150435]" name="chebu" duration-ms="6704" started-at="2017-12-15T12:41:19Z" finished-at="2017-12-15T12:41:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chebu -->
+        <test-method status="PASS" signature="tiaoxiu()[pri:6, instance:com.test.Tiaoxiu@5f150435]" name="tiaoxiu" duration-ms="3457" started-at="2017-12-15T12:41:25Z" finished-at="2017-12-15T12:41:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tiaoxiu -->
+        <test-method status="PASS" signature="shenzhe()[pri:7, instance:com.test.Tiaoxiu@5f150435]" name="shenzhe" duration-ms="11484" started-at="2017-12-15T12:41:29Z" finished-at="2017-12-15T12:41:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shenzhe -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.test.Tiaoxiu@5f150435]" name="doAfterMethod" is-config="true" duration-ms="10361" started-at="2017-12-15T12:41:40Z" finished-at="2017-12-15T12:41:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.test.Tiaoxiu -->
+      <class name="com.test.DayWork">
+        <test-method status="PASS" signature="doBeforeMethod()[pri:0, instance:com.test.DayWork@629f0666]" name="doBeforeMethod" is-config="true" duration-ms="8183" started-at="2017-12-15T12:34:21Z" finished-at="2017-12-15T12:34:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeMethod -->
+        <test-method status="PASS" signature="Mykaoqin()[pri:0, instance:com.test.DayWork@629f0666]" name="Mykaoqin" duration-ms="22582" started-at="2017-12-15T12:34:29Z" finished-at="2017-12-15T12:34:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mykaoqin -->
+        <test-method status="PASS" signature="addqu()[pri:0, instance:com.test.DayWork@629f0666]" name="addqu" duration-ms="10392" started-at="2017-12-15T12:34:51Z" depends-on-methods="com.test.DayWork.Mykaoqin" finished-at="2017-12-15T12:35:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addqu -->
+        <test-method status="PASS" signature="bianqu()[pri:0, instance:com.test.DayWork@629f0666]" name="bianqu" duration-ms="12827" started-at="2017-12-15T12:35:02Z" depends-on-methods="com.test.DayWork.Mykaoqin" finished-at="2017-12-15T12:35:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bianqu -->
+        <test-method status="PASS" signature="fresh2()[pri:0, instance:com.test.DayWork@629f0666]" name="fresh2" duration-ms="3583" started-at="2017-12-15T12:35:15Z" depends-on-methods="com.test.DayWork.Mykaoqin" finished-at="2017-12-15T12:35:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fresh2 -->
+        <test-method status="PASS" signature="kaoqin1()[pri:0, instance:com.test.DayWork@629f0666]" name="kaoqin1" duration-ms="11220" started-at="2017-12-15T12:35:18Z" depends-on-methods="com.test.DayWork.Mykaoqin" finished-at="2017-12-15T12:35:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- kaoqin1 -->
+        <test-method status="FAIL" signature="delqu()[pri:0, instance:com.test.DayWork@629f0666]" name="delqu" duration-ms="43" started-at="2017-12-15T12:35:29Z" depends-on-methods="com.test.DayWork.addqu" finished-at="2017-12-15T12:35:29Z">
+          <exception class="org.openqa.selenium.NoAlertPresentException">
+            <message>
+              <![CDATA[No modal dialog is currently open
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: 'LENOVO', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\pc\AppData\Local\Temp\rust_mozprofile.2EM5oxYyXH28, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0.3, platformVersion=10.0, moz:processID=2320, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 51574e14-5801-45d5-9373-3b4a6be9e329]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoAlertPresentException: No modal dialog is currently open
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: 'LENOVO', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\pc\AppData\Local\Temp\rust_mozprofile.2EM5oxYyXH28, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0.3, platformVersion=10.0, moz:processID=2320, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 51574e14-5801-45d5-9373-3b4a6be9e329
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:972)
+	at com.webtest.core.WebDriverEngine.getAlert(WebDriverEngine.java:209)
+	at com.test.DayWork.delqu(DayWork.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delqu -->
+        <test-method status="PASS" signature="kaoqin2()[pri:0, instance:com.test.DayWork@629f0666]" name="kaoqin2" duration-ms="13805" started-at="2017-12-15T12:35:29Z" depends-on-methods="com.test.DayWork.kaoqin1" finished-at="2017-12-15T12:35:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- kaoqin2 -->
+        <test-method status="PASS" signature="kaoqin4()[pri:0, instance:com.test.DayWork@629f0666]" name="kaoqin4" duration-ms="10994" started-at="2017-12-15T12:35:43Z" depends-on-methods="com.test.DayWork.kaoqin1" finished-at="2017-12-15T12:35:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- kaoqin4 -->
+        <test-method status="FAIL" signature="zkaoqin3()[pri:0, instance:com.test.DayWork@629f0666]" name="zkaoqin3" duration-ms="11023" started-at="2017-12-15T12:35:54Z" depends-on-methods="com.test.DayWork.kaoqin1" finished-at="2017-12-15T12:36:05Z">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: 'LENOVO', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\pc\AppData\Local\Temp\rust_mozprofile.2EM5oxYyXH28, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0.3, platformVersion=10.0, moz:processID=2320, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 51574e14-5801-45d5-9373-3b4a6be9e329]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: 
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: 'LENOVO', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\pc\AppData\Local\Temp\rust_mozprofile.2EM5oxYyXH28, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0.3, platformVersion=10.0, moz:processID=2320, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 51574e14-5801-45d5-9373-3b4a6be9e329
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.webtest.core.WebDriverEngine.click(WebDriverEngine.java:139)
+	at com.test.DayWork.zkaoqin3(DayWork.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zkaoqin3 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.test.DayWork@629f0666]" name="doAfterMethod" is-config="true" duration-ms="3181" started-at="2017-12-15T12:36:05Z" finished-at="2017-12-15T12:36:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.test.DayWork -->
+      <class name="com.test.Qingjia">
+        <test-method status="PASS" signature="doBeforeMethod()[pri:0, instance:com.test.Qingjia@224aed64]" name="doBeforeMethod" is-config="true" duration-ms="8173" started-at="2017-12-15T12:36:08Z" finished-at="2017-12-15T12:36:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeMethod -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.test.Qingjia@224aed64]" name="login" duration-ms="12510" started-at="2017-12-15T12:36:17Z" finished-at="2017-12-15T12:36:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="Mykaoqin()[pri:1, instance:com.test.Qingjia@224aed64]" name="Mykaoqin" duration-ms="3409" started-at="2017-12-15T12:36:29Z" finished-at="2017-12-15T12:36:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mykaoqin -->
+        <test-method status="PASS" signature="qingjia()[pri:2, instance:com.test.Qingjia@224aed64]" name="qingjia" duration-ms="10260" started-at="2017-12-15T12:36:33Z" finished-at="2017-12-15T12:36:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- qingjia -->
+        <test-method status="PASS" signature="addqing()[pri:3, instance:com.test.Qingjia@224aed64]" name="addqing" duration-ms="15307" started-at="2017-12-15T12:36:43Z" finished-at="2017-12-15T12:36:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addqing -->
+        <test-method status="PASS" signature="accqing()[pri:4, instance:com.test.Qingjia@224aed64]" name="accqing" duration-ms="16807" started-at="2017-12-15T12:36:58Z" finished-at="2017-12-15T12:37:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accqing -->
+        <test-method status="PASS" signature="delqing()[pri:5, instance:com.test.Qingjia@224aed64]" name="delqing" duration-ms="6869" started-at="2017-12-15T12:37:15Z" finished-at="2017-12-15T12:37:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delqing -->
+        <test-method status="PASS" signature="arrqing()[pri:6, instance:com.test.Qingjia@224aed64]" name="arrqing" duration-ms="11457" started-at="2017-12-15T12:37:22Z" finished-at="2017-12-15T12:37:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- arrqing -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.test.Qingjia@224aed64]" name="doAfterMethod" is-config="true" duration-ms="3137" started-at="2017-12-15T12:37:33Z" finished-at="2017-12-15T12:37:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.test.Qingjia -->
+      <class name="com.test.yemiantest">
+        <test-method status="PASS" signature="doBeforeMethod()[pri:0, instance:com.test.yemiantest@47d384ee]" name="doBeforeMethod" is-config="true" duration-ms="23083" started-at="2017-12-15T12:32:06Z" finished-at="2017-12-15T12:32:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeMethod -->
+        <test-method status="PASS" signature="setupBrowser()[pri:0, instance:com.test.yemiantest@47d384ee]" name="setupBrowser" is-config="true" duration-ms="29855" started-at="2017-12-15T12:32:29Z" finished-at="2017-12-15T12:32:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method status="PASS" signature="zhen()[pri:0, instance:com.test.yemiantest@47d384ee]" name="zhen" duration-ms="7079" started-at="2017-12-15T12:32:59Z" finished-at="2017-12-15T12:33:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zhen -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.test.yemiantest@47d384ee]" name="doAfterMethod" is-config="true" duration-ms="13123" started-at="2017-12-15T12:33:06Z" finished-at="2017-12-15T12:33:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.test.yemiantest -->
+      <class name="com.test.Shezhi">
+        <test-method status="PASS" signature="doBeforeMethod()[pri:0, instance:com.test.Shezhi@71e7a66b]" name="doBeforeMethod" is-config="true" duration-ms="8221" started-at="2017-12-15T12:39:08Z" finished-at="2017-12-15T12:39:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeMethod -->
+        <test-method status="PASS" signature="Mykaoqin()[pri:0, instance:com.test.Shezhi@71e7a66b]" name="Mykaoqin" duration-ms="13883" started-at="2017-12-15T12:39:16Z" finished-at="2017-12-15T12:39:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mykaoqin -->
+        <test-method status="PASS" signature="gongkao()[pri:0, instance:com.test.Shezhi@71e7a66b]" name="gongkao" duration-ms="12781" started-at="2017-12-15T12:39:30Z" depends-on-methods="com.test.Shezhi.Mykaoqin" finished-at="2017-12-15T12:39:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gongkao -->
+        <test-method status="FAIL" signature="baoxiao()[pri:0, instance:com.test.Shezhi@71e7a66b]" name="baoxiao" duration-ms="404" started-at="2017-12-15T12:39:43Z" depends-on-methods="com.test.Shezhi.gongkao" finished-at="2017-12-15T12:39:43Z">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[expectedValue doesn't match actualValue,actual Value is :<html class="screen-desktop-wide device-desktop"><head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="/ranzhi/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/ranzhi/favicon.ico" type="image/x-icon">
+  <title>公司考勤设置 - 然之协同</title>
+<script language="Javascript">var config={"webRoot":"\/ranzhi\/","appName":"oa","cookieLife":30,"requestType":"PATH_INFO","requestFix":"-","moduleVar":"m","methodVar":"f","viewVar":"t","defaultView":"html","themeRoot":"\/ranzhi\/theme\/","currentModule":"attend","currentMethod":"settings","clientLang":"zh-cn","requiredFields":"","save":"\u4fdd\u5b58","router":"\/ranzhi\/oa\/index.php","runMode":"front","timeout":30000,"pingInterval":60}
+</script>
+<script language="Javascript">if(typeof(v) != "object") v = {};v.entryID = 2;</script>
+<link rel="stylesheet" href="/ranzhi/theme/default/all.css?v=4.5" type="text/css" media="screen">
+<link rel="stylesheet" href="/ranzhi/theme/default/all.css?v=4.5" type="text/css" media="print">
+<script src="/ranzhi/js/all.js?v=4.5" type="text/javascript"></script>
+<style>.with-side .side{left: 20px; position: absolute; width: 140px;}
+.with-side .side .menu.affix{top:100px; margin-left:0;}
+.with-side .main{padding-left: 160px; margin-right: 0;}
+
+.valign-middle {vertical-align: middle !important;}
+.tree .active {font-weight: bold;}
+.tree > li {margin-right: 0;}
+.table td > a {display: inline-block; cursor: pointer;}
+.table td > a:hover {text-decoration: none;}
+.table td.reviewer{padding: 5px;}
+</style><!--[if lt IE 9]>
+<script src='/ranzhi/js/html5shiv/min.js?v=4.5' type='text/javascript'></script>
+<script src='/ranzhi/js/respond/min.js?v=4.5' type='text/javascript'></script>
+<![endif]-->
+<!--[if lt IE 10]>
+<script src='/ranzhi/js/jquery/placeholder/min.js?v=4.5' type='text/javascript'></script>
+<![endif]-->
+<script language="Javascript">v.lang = {"confirmDelete":"\u60a8\u786e\u5b9a\u8981\u6267\u884c\u5220\u9664\u64cd\u4f5c\u5417\uff1f","deleteing":"\u5220\u9664\u4e2d","doing":"\u5904\u7406\u4e2d","timeout":"\u7f51\u7edc\u8d85\u65f6,\u8bf7\u91cd\u8bd5","confirmDiscardChanges":"\u8868\u5355\u5df2\u66f4\u6539\uff0c\u786e\u5b9a\u5173\u95ed\uff1f","yes":"\u662f","no":"\u5426"};</script>
+</head>
+<body class="m-attend-settings entry-oa">
+<style>body {padding-top: 58px}</style>
+<nav class="navbar navbar-main navbar-fixed-top" role="navigation" id="mainNavbar">
+  <div class="navbar-header">
+    <a href="/ranzhi/oa/index.html" class="navbar-brand">日常办公</a>
+  </div>
+  <ul class="nav navbar-nav">
+<li><a href="/ranzhi/oa/dashboard/">首页</a></li>
+<li><a href="/ranzhi/oa/my-review.html">审批</a></li>
+<li><a href="/ranzhi/oa/announce-browse.html">公告</a></li>
+<li><a href="/ranzhi/oa/attend-personal.html">考勤</a></li>
+<li><a href="/ranzhi/oa/leave-personal.html">请假</a></li>
+<li><a href="/ranzhi/oa/makeup-personal.html">补班</a></li>
+<li><a href="/ranzhi/oa/overtime-personal.html">加班</a></li>
+<li><a href="/ranzhi/oa/lieu-personal.html">调休</a></li>
+<li><a href="/ranzhi/oa/trip-personal.html">出差</a></li>
+<li><a href="/ranzhi/oa/egress-personal.html">外出</a></li>
+<li><a href="/ranzhi/oa/refund-personal.html">报销</a></li>
+<li><a href="/ranzhi/oa/holiday-browse.html">节假日</a></li>
+<li class="active"><a href="/ranzhi/oa/setting-modules-oa.html">设置</a></li>
+</ul>
+</nav>
+<nav id="menu"><ul class="nav">
+<li><a href="/ranzhi/oa/setting-modules-oa.html">功能模块</a>
+</li>
+<li class="active"><a href="/ranzhi/oa/attend-settings-setting.html">公司考勤设置</a>
+</li>
+<li><a href="/ranzhi/oa/attend-personalSettings-setting.html">个人考勤设置</a>
+</li>
+<li><a href="/ranzhi/oa/attend-setManager-setting.html">部门经理设置</a>
+</li>
+<li><a href="/ranzhi/oa/leave-setReviewer-setting.html">请假审批人</a>
+</li>
+<li><a href="/ranzhi/oa/makeup-setReviewer-setting.html">补班审批人</a>
+</li>
+<li><a href="/ranzhi/oa/lieu-setReviewer-setting.html">调休审批人</a>
+</li>
+<li><a href="/ranzhi/oa/overtime-setReviewer-setting.html">加班审批人</a>
+</li>
+<li><a href="/ranzhi/oa/refund-setReviewer-setting.html">报销审批人</a>
+</li>
+<li><a href="/ranzhi/oa/refund-setCategory-setting.html">报销科目</a>
+</li>
+<li><a href="/ranzhi/oa/refund-setDepositor-setting.html">报销账户</a>
+</li>
+<li><a href="/ranzhi/oa/refund-setRefundBy-setting.html">由谁报销</a>
+</li>
+</ul></nav>
+
+<div class="row page-content with-menu">
+<link rel="stylesheet" href="/ranzhi/js/datetimepicker/css/min.css?v=4.5" type="text/css" media="screen">
+<link rel="stylesheet" href="/ranzhi/js/datetimepicker/css/min.css?v=4.5" type="text/css" media="print">
+<script src="/ranzhi/js/datetimepicker/js/min.js?v=4.5" type="text/javascript"></script></div></body></html>; expected Value is :保存成功]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: expectedValue doesn't match actualValue,actual Value is :<html class="screen-desktop-wide device-desktop"><head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="/ranzhi/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/ranzhi/favicon.ico" type="image/x-icon">
+  <title>公司考勤设置 - 然之协同</title>
+<script language="Javascript">var config={"webRoot":"\/ranzhi\/","appName":"oa","cookieLife":30,"requestType":"PATH_INFO","requestFix":"-","moduleVar":"m","methodVar":"f","viewVar":"t","defaultView":"html","themeRoot":"\/ranzhi\/theme\/","currentModule":"attend","currentMethod":"settings","clientLang":"zh-cn","requiredFields":"","save":"\u4fdd\u5b58","router":"\/ranzhi\/oa\/index.php","runMode":"front","timeout":30000,"pingInterval":60}
+</script>
+<script language="Javascript">if(typeof(v) != "object") v = {};v.entryID = 2;</script>
+<link rel="stylesheet" href="/ranzhi/theme/default/all.css?v=4.5" type="text/css" media="screen">
+<link rel="stylesheet" href="/ranzhi/theme/default/all.css?v=4.5" type="text/css" media="print">
+<script src="/ranzhi/js/all.js?v=4.5" type="text/javascript"></script>
+<style>.with-side .side{left: 20px; position: absolute; width: 140px;}
+.with-side .side .menu.affix{top:100px; margin-left:0;}
+.with-side .main{padding-left: 160px; margin-right: 0;}
+
+.valign-middle {vertical-align: middle !important;}
+.tree .active {font-weight: bold;}
+.tree > li {margin-right: 0;}
+.table td > a {display: inline-block; cursor: pointer;}
+.table td > a:hover {text-decoration: none;}
+.table td.reviewer{padding: 5px;}
+</style><!--[if lt IE 9]>
+<script src='/ranzhi/js/html5shiv/min.js?v=4.5' type='text/javascript'></script>
+<script src='/ranzhi/js/respond/min.js?v=4.5' type='text/javascript'></script>
+<![endif]-->
+<!--[if lt IE 10]>
+<script src='/ranzhi/js/jquery/placeholder/min.js?v=4.5' type='text/javascript'></script>
+<![endif]-->
+<script language="Javascript">v.lang = {"confirmDelete":"\u60a8\u786e\u5b9a\u8981\u6267\u884c\u5220\u9664\u64cd\u4f5c\u5417\uff1f","deleteing":"\u5220\u9664\u4e2d","doing":"\u5904\u7406\u4e2d","timeout":"\u7f51\u7edc\u8d85\u65f6,\u8bf7\u91cd\u8bd5","confirmDiscardChanges":"\u8868\u5355\u5df2\u66f4\u6539\uff0c\u786e\u5b9a\u5173\u95ed\uff1f","yes":"\u662f","no":"\u5426"};</script>
+</head>
+<body class="m-attend-settings entry-oa">
+<style>body {padding-top: 58px}</style>
+<nav class="navbar navbar-main navbar-fixed-top" role="navigation" id="mainNavbar">
+  <div class="navbar-header">
+    <a href="/ranzhi/oa/index.html" class="navbar-brand">日常办公</a>
+  </div>
+  <ul class="nav navbar-nav">
+<li><a href="/ranzhi/oa/dashboard/">首页</a></li>
+<li><a href="/ranzhi/oa/my-review.html">审批</a></li>
+<li><a href="/ranzhi/oa/announce-browse.html">公告</a></li>
+<li><a href="/ranzhi/oa/attend-personal.html">考勤</a></li>
+<li><a href="/ranzhi/oa/leave-personal.html">请假</a></li>
+<li><a href="/ranzhi/oa/makeup-personal.html">补班</a></li>
+<li><a href="/ranzhi/oa/overtime-personal.html">加班</a></li>
+<li><a href="/ranzhi/oa/lieu-personal.html">调休</a></li>
+<li><a href="/ranzhi/oa/trip-personal.html">出差</a></li>
+<li><a href="/ranzhi/oa/egress-personal.html">外出</a></li>
+<li><a href="/ranzhi/oa/refund-personal.html">报销</a></li>
+<li><a href="/ranzhi/oa/holiday-browse.html">节假日</a></li>
+<li class="active"><a href="/ranzhi/oa/setting-modules-oa.html">设置</a></li>
+</ul>
+</nav>
+<nav id="menu"><ul class="nav">
+<li><a href="/ranzhi/oa/setting-modules-oa.html">功能模块</a>
+</li>
+<li class="active"><a href="/ranzhi/oa/attend-settings-setting.html">公司考勤设置</a>
+</li>
+<li><a href="/ranzhi/oa/attend-personalSettings-setting.html">个人考勤设置</a>
+</li>
+<li><a href="/ranzhi/oa/attend-setManager-setting.html">部门经理设置</a>
+</li>
+<li><a href="/ranzhi/oa/leave-setReviewer-setting.html">请假审批人</a>
+</li>
+<li><a href="/ranzhi/oa/makeup-setReviewer-setting.html">补班审批人</a>
+</li>
+<li><a href="/ranzhi/oa/lieu-setReviewer-setting.html">调休审批人</a>
+</li>
+<li><a href="/ranzhi/oa/overtime-setReviewer-setting.html">加班审批人</a>
+</li>
+<li><a href="/ranzhi/oa/refund-setReviewer-setting.html">报销审批人</a>
+</li>
+<li><a href="/ranzhi/oa/refund-setCategory-setting.html">报销科目</a>
+</li>
+<li><a href="/ranzhi/oa/refund-setDepositor-setting.html">报销账户</a>
+</li>
+<li><a href="/ranzhi/oa/refund-setRefundBy-setting.html">由谁报销</a>
+</li>
+</ul></nav>
+
+<div class="row page-content with-menu">
+<link rel="stylesheet" href="/ranzhi/js/datetimepicker/css/min.css?v=4.5" type="text/css" media="screen">
+<link rel="stylesheet" href="/ranzhi/js/datetimepicker/css/min.css?v=4.5" type="text/css" media="print">
+<script src="/ranzhi/js/datetimepicker/js/min.js?v=4.5" type="text/javascript"></script></div></body></html>; expected Value is :保存成功
+	at com.webtest.core.Checker.verify(Checker.java:55)
+	at com.webtest.core.Checker.verifyHtmlSource(Checker.java:62)
+	at com.test.Shezhi.baoxiao(Shezhi.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baoxiao -->
+        <test-method status="PASS" signature="gekao()[pri:0, instance:com.test.Shezhi@71e7a66b]" name="gekao" duration-ms="8898" started-at="2017-12-15T12:39:43Z" depends-on-methods="com.test.Shezhi.gongkao" finished-at="2017-12-15T12:39:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gekao -->
+        <test-method status="FAIL" signature="kemu()[pri:0, instance:com.test.Shezhi@71e7a66b]" name="kemu" duration-ms="48" started-at="2017-12-15T12:39:52Z" depends-on-methods="com.test.Shezhi.gongkao" finished-at="2017-12-15T12:39:52Z">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: 'LENOVO', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\pc\AppData\Local\Temp\rust_mozprofile.uFSKXXh3boEN, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0.3, platformVersion=10.0, moz:processID=12800, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 01686438-e994-48da-bf51-6ff489f9fef2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: 'LENOVO', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\pc\AppData\Local\Temp\rust_mozprofile.uFSKXXh3boEN, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0.3, platformVersion=10.0, moz:processID=12800, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 01686438-e994-48da-bf51-6ff489f9fef2
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.webtest.core.WebDriverEngine.click(WebDriverEngine.java:139)
+	at com.test.Shezhi.kemu(Shezhi.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- kemu -->
+        <test-method status="FAIL" signature="piren()[pri:0, instance:com.test.Shezhi@71e7a66b]" name="piren" duration-ms="198" started-at="2017-12-15T12:39:52Z" depends-on-methods="com.test.Shezhi.gongkao" finished-at="2017-12-15T12:39:52Z">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[expectedValue doesn't match actualValue,actual Value is :<html class="screen-desktop-wide device-desktop"><head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="/ranzhi/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/ranzhi/favicon.ico" type="image/x-icon">
+  <title>个人考勤设置 - 然之协同</title>
+<script language="Javascript">var config={"webRoot":"\/ranzhi\/","appName":"oa","cookieLife":30,"requestType":"PATH_INFO","requestFix":"-","moduleVar":"m","methodVar":"f","viewVar":"t","defaultView":"html","themeRoot":"\/ranzhi\/theme\/","currentModule":"attend","currentMethod":"personalsettings","clientLang":"zh-cn","requiredFields":"","save":"\u4fdd\u5b58","router":"\/ranzhi\/oa\/index.php","runMode":"front","timeout":30000,"pingInterval":60}
+</script>
+<script language="Javascript">if(typeof(v) != "object") v = {};v.entryID = 2;</script>
+<link rel="stylesheet" href="/ranzhi/theme/default/all.css?v=4.5" type="text/css" media="screen">
+<link rel="stylesheet" href="/ranzhi/theme/default/all.css?v=4.5" type="text/css" media="print">
+<script src="/ranzhi/js/all.js?v=4.5" type="text/javascript"></script>
+<style>.with-side .side{left: 20px; position: absolute; width: 140px;}
+.with-side .side .menu.affix{top:100px; margin-left:0;}
+.with-side .main{padding-left: 160px; margin-right: 0;}
+
+.valign-middle {vertical-align: middle !important;}
+.tree .active {font-weight: bold;}
+.tree > li {margin-right: 0;}
+</style><!--[if lt IE 9]>
+<script src='/ranzhi/js/html5shiv/min.js?v=4.5' type='text/javascript'></script>
+<script src='/ranzhi/js/respond/min.js?v=4.5' type='text/javascript'></script>
+<![endif]-->
+<!--[if lt IE 10]>
+<script src='/ranzhi/js/jquery/placeholder/min.js?v=4.5' type='text/javascript'></script>
+<![endif]-->
+<script language="Javascript">v.lang = {"confirmDelete":"\u60a8\u786e\u5b9a\u8981\u6267\u884c\u5220\u9664\u64cd\u4f5c\u5417\uff1f","deleteing":"\u5220\u9664\u4e2d","doing":"\u5904\u7406\u4e2d","timeout":"\u7f51\u7edc\u8d85\u65f6,\u8bf7\u91cd\u8bd5","confirmDiscardChanges":"\u8868\u5355\u5df2\u66f4\u6539\uff0c\u786e\u5b9a\u5173\u95ed\uff1f","yes":"\u662f","no":"\u5426"};</script>
+</head>
+<body class="m-attend-personalsettings entry-oa">
+<style>body {padding-top: 58px}</style>
+<nav class="navbar navbar-main navbar-fixed-top" role="navigation" id="mainNavbar">
+  <div class="navbar-header">
+    <a href="/ranzhi/oa/index.html" class="navbar-brand">日常办公</a>
+  </div>
+  <ul class="nav navbar-nav">
+<li><a href="/ranzhi/oa/dashboard/">首页</a></li>
+<li><a href="/ranzhi/oa/my-review.html">审批</a></li>
+<li><a href="/ranzhi/oa/announce-browse.html">公告</a></li>
+<li><a href="/ranzhi/oa/attend-personal.html">考勤</a></li>
+<li><a href="/ranzhi/oa/leave-personal.html">请假</a></li>
+<li><a href="/ranzhi/oa/makeup-personal.html">补班</a></li>
+<li><a href="/ranzhi/oa/overtime-personal.html">加班</a></li>
+<li><a href="/ranzhi/oa/lieu-personal.html">调休</a></li>
+<li><a href="/ranzhi/oa/trip-personal.html">出差</a></li>
+<li><a href="/ranzhi/oa/egress-personal.html">外出</a></li>
+<li><a href="/ranzhi/oa/refund-personal.html">报销</a></li>
+<li><a href="/ranzhi/oa/holiday-browse.html">节假日</a></li>
+<li class="active"><a href="/ranzhi/oa/setting-modules-oa.html">设置</a></li>
+</ul>
+</nav>
+<nav id="menu"><ul class="nav">
+<li><a href="/ranzhi/oa/setting-modules-oa.html">功能模块</a>
+</li>
+<li><a href="/ranzhi/oa/attend-settings-setting.html">公司考勤设置</a>
+</li>
+<li class="active"><a href="/ranzhi/oa/attend-personalSettings-setting.html">个人考勤设置</a>
+</li>
+<li><a href="/ranzhi/oa/attend-setManager-setting.html">部门经理设置</a>
+</li>
+<li><a href="/ranzhi/oa/leave-setReviewer-setting.html">请假审批人</a>
+</li>
+<li><a href="/ranzhi/oa/makeup-setReviewer-setting.html">补班审批人</a>
+</li>
+<li><a href="/ranzhi/oa/lieu-setReviewer-setting.html">调休审批人</a>
+</li>
+<li><a href="/ranzhi/oa/overtime-setReviewer-setting.html">加班审批人</a>
+</li>
+<li><a href="/ranzhi/oa/refund-setReviewer-setting.html">报销审批人</a>
+</li>
+<li><a href="/ranzhi/oa/refund-setCategory-setting.html">报销科目</a>
+</li>
+<li><a href="/ranzhi/oa/refund-setDepositor-setting.html">报销账户</a>
+</li>
+<li><a href="/ranzhi/oa/refund-setRefundBy-setting.html">由谁报销</a>
+</li>
+</ul></nav>
+
+<div class="row page-content with-menu">
+<link rel="stylesheet" href="/ranzhi/js/jquery/chosen/min.css?v=4.5" type="text/css" media="screen">
+<link rel="stylesheet" href="/ranzhi/js/jquery/chosen/min.css?v=4.5" type="text/css" media="print">
+<script src="/ranzhi/js/jquery/chosen/min.js?v=4.5" type="text/javascript"></script></div></body></html>; expected Value is :第一审批人和第二审批人]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: expectedValue doesn't match actualValue,actual Value is :<html class="screen-desktop-wide device-desktop"><head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="/ranzhi/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/ranzhi/favicon.ico" type="image/x-icon">
+  <title>个人考勤设置 - 然之协同</title>
+<script language="Javascript">var config={"webRoot":"\/ranzhi\/","appName":"oa","cookieLife":30,"requestType":"PATH_INFO","requestFix":"-","moduleVar":"m","methodVar":"f","viewVar":"t","defaultView":"html","themeRoot":"\/ranzhi\/theme\/","currentModule":"attend","currentMethod":"personalsettings","clientLang":"zh-cn","requiredFields":"","save":"\u4fdd\u5b58","router":"\/ranzhi\/oa\/index.php","runMode":"front","timeout":30000,"pingInterval":60}
+</script>
+<script language="Javascript">if(typeof(v) != "object") v = {};v.entryID = 2;</script>
+<link rel="stylesheet" href="/ranzhi/theme/default/all.css?v=4.5" type="text/css" media="screen">
+<link rel="stylesheet" href="/ranzhi/theme/default/all.css?v=4.5" type="text/css" media="print">
+<script src="/ranzhi/js/all.js?v=4.5" type="text/javascript"></script>
+<style>.with-side .side{left: 20px; position: absolute; width: 140px;}
+.with-side .side .menu.affix{top:100px; margin-left:0;}
+.with-side .main{padding-left: 160px; margin-right: 0;}
+
+.valign-middle {vertical-align: middle !important;}
+.tree .active {font-weight: bold;}
+.tree > li {margin-right: 0;}
+</style><!--[if lt IE 9]>
+<script src='/ranzhi/js/html5shiv/min.js?v=4.5' type='text/javascript'></script>
+<script src='/ranzhi/js/respond/min.js?v=4.5' type='text/javascript'></script>
+<![endif]-->
+<!--[if lt IE 10]>
+<script src='/ranzhi/js/jquery/placeholder/min.js?v=4.5' type='text/javascript'></script>
+<![endif]-->
+<script language="Javascript">v.lang = {"confirmDelete":"\u60a8\u786e\u5b9a\u8981\u6267\u884c\u5220\u9664\u64cd\u4f5c\u5417\uff1f","deleteing":"\u5220\u9664\u4e2d","doing":"\u5904\u7406\u4e2d","timeout":"\u7f51\u7edc\u8d85\u65f6,\u8bf7\u91cd\u8bd5","confirmDiscardChanges":"\u8868\u5355\u5df2\u66f4\u6539\uff0c\u786e\u5b9a\u5173\u95ed\uff1f","yes":"\u662f","no":"\u5426"};</script>
+</head>
+<body class="m-attend-personalsettings entry-oa">
+<style>body {padding-top: 58px}</style>
+<nav class="navbar navbar-main navbar-fixed-top" role="navigation" id="mainNavbar">
+  <div class="navbar-header">
+    <a href="/ranzhi/oa/index.html" class="navbar-brand">日常办公</a>
+  </div>
+  <ul class="nav navbar-nav">
+<li><a href="/ranzhi/oa/dashboard/">首页</a></li>
+<li><a href="/ranzhi/oa/my-review.html">审批</a></li>
+<li><a href="/ranzhi/oa/announce-browse.html">公告</a></li>
+<li><a href="/ranzhi/oa/attend-personal.html">考勤</a></li>
+<li><a href="/ranzhi/oa/leave-personal.html">请假</a></li>
+<li><a href="/ranzhi/oa/makeup-personal.html">补班</a></li>
+<li><a href="/ranzhi/oa/overtime-personal.html">加班</a></li>
+<li><a href="/ranzhi/oa/lieu-personal.html">调休</a></li>
+<li><a href="/ranzhi/oa/trip-personal.html">出差</a></li>
+<li><a href="/ranzhi/oa/egress-personal.html">外出</a></li>
+<li><a href="/ranzhi/oa/refund-personal.html">报销</a></li>
+<li><a href="/ranzhi/oa/holiday-browse.html">节假日</a></li>
+<li class="active"><a href="/ranzhi/oa/setting-modules-oa.html">设置</a></li>
+</ul>
+</nav>
+<nav id="menu"><ul class="nav">
+<li><a href="/ranzhi/oa/setting-modules-oa.html">功能模块</a>
+</li>
+<li><a href="/ranzhi/oa/attend-settings-setting.html">公司考勤设置</a>
+</li>
+<li class="active"><a href="/ranzhi/oa/attend-personalSettings-setting.html">个人考勤设置</a>
+</li>
+<li><a href="/ranzhi/oa/attend-setManager-setting.html">部门经理设置</a>
+</li>
+<li><a href="/ranzhi/oa/leave-setReviewer-setting.html">请假审批人</a>
+</li>
+<li><a href="/ranzhi/oa/makeup-setReviewer-setting.html">补班审批人</a>
+</li>
+<li><a href="/ranzhi/oa/lieu-setReviewer-setting.html">调休审批人</a>
+</li>
+<li><a href="/ranzhi/oa/overtime-setReviewer-setting.html">加班审批人</a>
+</li>
+<li><a href="/ranzhi/oa/refund-setReviewer-setting.html">报销审批人</a>
+</li>
+<li><a href="/ranzhi/oa/refund-setCategory-setting.html">报销科目</a>
+</li>
+<li><a href="/ranzhi/oa/refund-setDepositor-setting.html">报销账户</a>
+</li>
+<li><a href="/ranzhi/oa/refund-setRefundBy-setting.html">由谁报销</a>
+</li>
+</ul></nav>
+
+<div class="row page-content with-menu">
+<link rel="stylesheet" href="/ranzhi/js/jquery/chosen/min.css?v=4.5" type="text/css" media="screen">
+<link rel="stylesheet" href="/ranzhi/js/jquery/chosen/min.css?v=4.5" type="text/css" media="print">
+<script src="/ranzhi/js/jquery/chosen/min.js?v=4.5" type="text/javascript"></script></div></body></html>; expected Value is :第一审批人和第二审批人
+	at com.webtest.core.Checker.verify(Checker.java:55)
+	at com.webtest.core.Checker.verifyHtmlSource(Checker.java:62)
+	at com.test.Shezhi.piren(Shezhi.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- piren -->
+        <test-method status="PASS" signature="shenpiren()[pri:0, instance:com.test.Shezhi@71e7a66b]" name="shenpiren" duration-ms="11855" started-at="2017-12-15T12:39:52Z" depends-on-methods="com.test.Shezhi.gongkao" finished-at="2017-12-15T12:40:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shenpiren -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.test.Shezhi@71e7a66b]" name="doAfterMethod" is-config="true" duration-ms="10113" started-at="2017-12-15T12:40:04Z" finished-at="2017-12-15T12:40:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.test.Shezhi -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

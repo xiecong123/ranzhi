@@ -21,7 +21,7 @@ public class NSDataProvicer {
 	
 	@DataProvider(name="s2")
 	public static Object[][] getXsl() throws IOException{
-		ExcelDataProvider ft = new ExcelDataProvider("data/testData.xlsx","Sheet1");
+		ExcelDataProvider ft = new ExcelDataProvider("data/testData.xls","Sheet1");
 		return ft.getTestDataByExcel();
 	}
 	

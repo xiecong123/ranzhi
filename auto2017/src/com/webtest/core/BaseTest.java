@@ -17,10 +17,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
-
+import com.test.LoginTest;
 import com.webtest.util.Log;
 
 
@@ -34,10 +37,10 @@ public class BaseTest {
 	public static Properties conf = null;
 	public final static String CONF_PATH = "conf/config.properties";
 	public  WebDriverEngine webtest;
-	private WebDriver driver;
+	public WebDriver driver;
 	public String driverType;
 	protected ObjectMap objectMap=null;
-
+	
 	private WebDriver newWebDriver(String driverType) {
 		WebDriver driver = null;
 	 if (driverType.equalsIgnoreCase("firefox")) {
@@ -124,12 +127,11 @@ public class BaseTest {
 			e.printStackTrace();
 		}
 	}
-
 	
-
-
-	@BeforeTest
+//
+	@BeforeClass
 	public void doBeforeMethod() throws Exception {
+		System.out.println("Init");
 		driverType=getCfgProperty("driverType");
 		driver = this.newWebDriver(driverType);
 		Log.info(driverType);
@@ -144,13 +146,13 @@ public class BaseTest {
 		
 	}
 
-//	@AfterTest
-//	public void doAfterMethod() {
-//		if(this.driver != null){
-//			this.driver.quit();
-//			}
-//		Log.info("Quitted Browser");
-//	}
+	@AfterClass
+	public void doAfterMethod() {
+		if(this.driver != null){
+			this.driver.quit();
+			}
+		Log.info("Quitted Browser");
+	}
 	
 
 }

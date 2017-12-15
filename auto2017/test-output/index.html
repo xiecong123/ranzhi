@@ -2,10 +2,9 @@
 
 <html>
   <head>
-  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -24,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 9 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +36,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +47,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\pc\AppData\Local\Temp\testng-eclipse-2143771732\testng-customsuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>G:\eclipse\auto2017\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,31 +90,289 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">51 methods, 9 failed,  5 skipped,  37 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Buban" hash-for-method="abuban">abuban</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Shezhi" hash-for-method="baoxiao">baoxiao</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Tuandui" hash-for-method="delbo">delbo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.DayWork" hash-for-method="delqu">delqu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Tuandui" hash-for-method="delzikuai">delzikuai</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Tuandui" hash-for-method="findbo">findbo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Shezhi" hash-for-method="kemu">kemu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Shezhi" hash-for-method="piren">piren</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.DayWork" hash-for-method="zkaoqin3">zkaoqin3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Buban" hash-for-method="abuban12">abuban12</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Buban" hash-for-method="achabu">achabu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Buban" hash-for-method="zengbu1">zengbu1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Buban" hash-for-method="zengbu2">zengbu2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Buban" hash-for-method="zengbu3">zengbu3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Buban" hash-for-method="Mykaoqin">Mykaoqin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.DayWork" hash-for-method="Mykaoqin">Mykaoqin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Buban" hash-for-method="addbu3">addbu3</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Qingjia" hash-for-method="Mykaoqin">Mykaoqin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Buban" hash-for-method="buban">buban</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Shezhi" hash-for-method="Mykaoqin">Mykaoqin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Tiaoxiu" hash-for-method="Mykaoqin">Mykaoqin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Buban" hash-for-method="Mykaoqin">Mykaoqin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Qingjia" hash-for-method="accqing">accqing</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Tiaoxiu" hash-for-method="addbu1">addbu1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Tiaoxiu" hash-for-method="addbu2">addbu2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Qingjia" hash-for-method="addqing">addqing</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.DayWork" hash-for-method="addqu">addqu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Tuandui" hash-for-method="addzikuai">addzikuai</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Qingjia" hash-for-method="arrqing">arrqing</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Tuandui" hash-for-method="bianbo">bianbo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.DayWork" hash-for-method="bianqu">bianqu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Tuandui" hash-for-method="bianqu">bianqu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Tuandui" hash-for-method="bianzikuai">bianzikuai</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Tiaoxiu" hash-for-method="buban">buban</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Tiaoxiu" hash-for-method="chebu">chebu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Tuandui" hash-for-method="company">company</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Qingjia" hash-for-method="delqing">delqing</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.DayWork" hash-for-method="fresh2">fresh2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Shezhi" hash-for-method="gekao">gekao</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Shezhi" hash-for-method="gongkao">gongkao</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.DayWork" hash-for-method="kaoqin1">kaoqin1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.DayWork" hash-for-method="kaoqin2">kaoqin2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.DayWork" hash-for-method="kaoqin4">kaoqin4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Tiaoxiu" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Tuandui" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Qingjia" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Qingjia" hash-for-method="qingjia">qingjia</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Tuandui" hash-for-method="qukuai">qukuai</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Shezhi" hash-for-method="shenpiren">shenpiren</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Tiaoxiu" hash-for-method="shenzhe">shenzhe</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Tuandui" hash-for-method="soutong">soutong</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Tiaoxiu" hash-for-method="tiaoxiu">tiaoxiu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.Buban" hash-for-method="zengbu4">zengbu4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.yemiantest" hash-for-method="zhen">zhen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -126,11 +383,443 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.test.Shezhi</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="baoxiao">
+                  </a> <!-- baoxiao -->
+                  <span class="method-name">baoxiao</span>
+                  <div class="stack-trace">java.lang.Exception: expectedValue doesn&apos;t match actualValue,actual Value is :&lt;html class=&quot;screen-desktop-wide device-desktop&quot;&gt;&lt;head profile=&quot;http://www.w3.org/2005/10/profile&quot;&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+  &lt;link rel=&quot;icon&quot; href=&quot;/ranzhi/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/ranzhi/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+  &lt;title&gt;公司考勤设置 - 然之协同&lt;/title&gt;
+&lt;script language=&quot;Javascript&quot;&gt;var config={&quot;webRoot&quot;:&quot;\/ranzhi\/&quot;,&quot;appName&quot;:&quot;oa&quot;,&quot;cookieLife&quot;:30,&quot;requestType&quot;:&quot;PATH_INFO&quot;,&quot;requestFix&quot;:&quot;-&quot;,&quot;moduleVar&quot;:&quot;m&quot;,&quot;methodVar&quot;:&quot;f&quot;,&quot;viewVar&quot;:&quot;t&quot;,&quot;defaultView&quot;:&quot;html&quot;,&quot;themeRoot&quot;:&quot;\/ranzhi\/theme\/&quot;,&quot;currentModule&quot;:&quot;attend&quot;,&quot;currentMethod&quot;:&quot;settings&quot;,&quot;clientLang&quot;:&quot;zh-cn&quot;,&quot;requiredFields&quot;:&quot;&quot;,&quot;save&quot;:&quot;\u4fdd\u5b58&quot;,&quot;router&quot;:&quot;\/ranzhi\/oa\/index.php&quot;,&quot;runMode&quot;:&quot;front&quot;,&quot;timeout&quot;:30000,&quot;pingInterval&quot;:60}
+&lt;/script&gt;
+&lt;script language=&quot;Javascript&quot;&gt;if(typeof(v) != &quot;object&quot;) v = {};v.entryID = 2;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/ranzhi/theme/default/all.css?v=4.5&quot; type=&quot;text/css&quot; media=&quot;screen&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/ranzhi/theme/default/all.css?v=4.5&quot; type=&quot;text/css&quot; media=&quot;print&quot;&gt;
+&lt;script src=&quot;/ranzhi/js/all.js?v=4.5&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;style&gt;.with-side .side{left: 20px; position: absolute; width: 140px;}
+.with-side .side .menu.affix{top:100px; margin-left:0;}
+.with-side .main{padding-left: 160px; margin-right: 0;}
+
+.valign-middle {vertical-align: middle !important;}
+.tree .active {font-weight: bold;}
+.tree &gt; li {margin-right: 0;}
+.table td &gt; a {display: inline-block; cursor: pointer;}
+.table td &gt; a:hover {text-decoration: none;}
+.table td.reviewer{padding: 5px;}
+&lt;/style&gt;&lt;!--[if lt IE 9]&gt;
+&lt;script src=&apos;/ranzhi/js/html5shiv/min.js?v=4.5&apos; type=&apos;text/javascript&apos;&gt;&lt;/script&gt;
+&lt;script src=&apos;/ranzhi/js/respond/min.js?v=4.5&apos; type=&apos;text/javascript&apos;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+&lt;!--[if lt IE 10]&gt;
+&lt;script src=&apos;/ranzhi/js/jquery/placeholder/min.js?v=4.5&apos; type=&apos;text/javascript&apos;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+&lt;script language=&quot;Javascript&quot;&gt;v.lang = {&quot;confirmDelete&quot;:&quot;\u60a8\u786e\u5b9a\u8981\u6267\u884c\u5220\u9664\u64cd\u4f5c\u5417\uff1f&quot;,&quot;deleteing&quot;:&quot;\u5220\u9664\u4e2d&quot;,&quot;doing&quot;:&quot;\u5904\u7406\u4e2d&quot;,&quot;timeout&quot;:&quot;\u7f51\u7edc\u8d85\u65f6,\u8bf7\u91cd\u8bd5&quot;,&quot;confirmDiscardChanges&quot;:&quot;\u8868\u5355\u5df2\u66f4\u6539\uff0c\u786e\u5b9a\u5173\u95ed\uff1f&quot;,&quot;yes&quot;:&quot;\u662f&quot;,&quot;no&quot;:&quot;\u5426&quot;};&lt;/script&gt;
+&lt;/head&gt;
+&lt;body class=&quot;m-attend-settings entry-oa&quot;&gt;
+&lt;style&gt;body {padding-top: 58px}&lt;/style&gt;
+&lt;nav class=&quot;navbar navbar-main navbar-fixed-top&quot; role=&quot;navigation&quot; id=&quot;mainNavbar&quot;&gt;
+  &lt;div class=&quot;navbar-header&quot;&gt;
+    &lt;a href=&quot;/ranzhi/oa/index.html&quot; class=&quot;navbar-brand&quot;&gt;日常办公&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/dashboard/&quot;&gt;首页&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/my-review.html&quot;&gt;审批&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/announce-browse.html&quot;&gt;公告&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/attend-personal.html&quot;&gt;考勤&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/leave-personal.html&quot;&gt;请假&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/makeup-personal.html&quot;&gt;补班&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/overtime-personal.html&quot;&gt;加班&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/lieu-personal.html&quot;&gt;调休&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/trip-personal.html&quot;&gt;出差&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/egress-personal.html&quot;&gt;外出&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/refund-personal.html&quot;&gt;报销&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/holiday-browse.html&quot;&gt;节假日&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;/ranzhi/oa/setting-modules-oa.html&quot;&gt;设置&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;nav id=&quot;menu&quot;&gt;&lt;ul class=&quot;nav&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/setting-modules-oa.html&quot;&gt;功能模块&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;/ranzhi/oa/attend-settings-setting.html&quot;&gt;公司考勤设置&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/attend-personalSettings-setting.html&quot;&gt;个人考勤设置&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/attend-setManager-setting.html&quot;&gt;部门经理设置&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/leave-setReviewer-setting.html&quot;&gt;请假审批人&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/makeup-setReviewer-setting.html&quot;&gt;补班审批人&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/lieu-setReviewer-setting.html&quot;&gt;调休审批人&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/overtime-setReviewer-setting.html&quot;&gt;加班审批人&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/refund-setReviewer-setting.html&quot;&gt;报销审批人&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/refund-setCategory-setting.html&quot;&gt;报销科目&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/refund-setDepositor-setting.html&quot;&gt;报销账户&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/refund-setRefundBy-setting.html&quot;&gt;由谁报销&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/nav&gt;
+
+&lt;div class=&quot;row page-content with-menu&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/ranzhi/js/datetimepicker/css/min.css?v=4.5&quot; type=&quot;text/css&quot; media=&quot;screen&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/ranzhi/js/datetimepicker/css/min.css?v=4.5&quot; type=&quot;text/css&quot; media=&quot;print&quot;&gt;
+&lt;script src=&quot;/ranzhi/js/datetimepicker/js/min.js?v=4.5&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;; expected Value is :保存成功
+	at com.webtest.core.Checker.verify(Checker.java:55)
+	at com.webtest.core.Checker.verifyHtmlSource(Checker.java:62)
+	at com.test.Shezhi.baoxiao(Shezhi.java:65)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="kemu">
+                  </a> <!-- kemu -->
+                  <span class="method-name">kemu</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: The element reference of &lt;a&gt; stale: either the element is no longer attached to the DOM or the page has been refreshed
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.254.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\pc\AppData\Local\Temp\rust_mozprofile.uFSKXXh3boEN, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0.3, platformVersion=10.0, moz:processID=12800, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 01686438-e994-48da-bf51-6ff489f9fef2
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.webtest.core.WebDriverEngine.click(WebDriverEngine.java:139)
+	at com.test.Shezhi.kemu(Shezhi.java:54)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="piren">
+                  </a> <!-- piren -->
+                  <span class="method-name">piren</span>
+                  <div class="stack-trace">java.lang.Exception: expectedValue doesn&apos;t match actualValue,actual Value is :&lt;html class=&quot;screen-desktop-wide device-desktop&quot;&gt;&lt;head profile=&quot;http://www.w3.org/2005/10/profile&quot;&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+  &lt;link rel=&quot;icon&quot; href=&quot;/ranzhi/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/ranzhi/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+  &lt;title&gt;个人考勤设置 - 然之协同&lt;/title&gt;
+&lt;script language=&quot;Javascript&quot;&gt;var config={&quot;webRoot&quot;:&quot;\/ranzhi\/&quot;,&quot;appName&quot;:&quot;oa&quot;,&quot;cookieLife&quot;:30,&quot;requestType&quot;:&quot;PATH_INFO&quot;,&quot;requestFix&quot;:&quot;-&quot;,&quot;moduleVar&quot;:&quot;m&quot;,&quot;methodVar&quot;:&quot;f&quot;,&quot;viewVar&quot;:&quot;t&quot;,&quot;defaultView&quot;:&quot;html&quot;,&quot;themeRoot&quot;:&quot;\/ranzhi\/theme\/&quot;,&quot;currentModule&quot;:&quot;attend&quot;,&quot;currentMethod&quot;:&quot;personalsettings&quot;,&quot;clientLang&quot;:&quot;zh-cn&quot;,&quot;requiredFields&quot;:&quot;&quot;,&quot;save&quot;:&quot;\u4fdd\u5b58&quot;,&quot;router&quot;:&quot;\/ranzhi\/oa\/index.php&quot;,&quot;runMode&quot;:&quot;front&quot;,&quot;timeout&quot;:30000,&quot;pingInterval&quot;:60}
+&lt;/script&gt;
+&lt;script language=&quot;Javascript&quot;&gt;if(typeof(v) != &quot;object&quot;) v = {};v.entryID = 2;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/ranzhi/theme/default/all.css?v=4.5&quot; type=&quot;text/css&quot; media=&quot;screen&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/ranzhi/theme/default/all.css?v=4.5&quot; type=&quot;text/css&quot; media=&quot;print&quot;&gt;
+&lt;script src=&quot;/ranzhi/js/all.js?v=4.5&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;style&gt;.with-side .side{left: 20px; position: absolute; width: 140px;}
+.with-side .side .menu.affix{top:100px; margin-left:0;}
+.with-side .main{padding-left: 160px; margin-right: 0;}
+
+.valign-middle {vertical-align: middle !important;}
+.tree .active {font-weight: bold;}
+.tree &gt; li {margin-right: 0;}
+&lt;/style&gt;&lt;!--[if lt IE 9]&gt;
+&lt;script src=&apos;/ranzhi/js/html5shiv/min.js?v=4.5&apos; type=&apos;text/javascript&apos;&gt;&lt;/script&gt;
+&lt;script src=&apos;/ranzhi/js/respond/min.js?v=4.5&apos; type=&apos;text/javascript&apos;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+&lt;!--[if lt IE 10]&gt;
+&lt;script src=&apos;/ranzhi/js/jquery/placeholder/min.js?v=4.5&apos; type=&apos;text/javascript&apos;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+&lt;script language=&quot;Javascript&quot;&gt;v.lang = {&quot;confirmDelete&quot;:&quot;\u60a8\u786e\u5b9a\u8981\u6267\u884c\u5220\u9664\u64cd\u4f5c\u5417\uff1f&quot;,&quot;deleteing&quot;:&quot;\u5220\u9664\u4e2d&quot;,&quot;doing&quot;:&quot;\u5904\u7406\u4e2d&quot;,&quot;timeout&quot;:&quot;\u7f51\u7edc\u8d85\u65f6,\u8bf7\u91cd\u8bd5&quot;,&quot;confirmDiscardChanges&quot;:&quot;\u8868\u5355\u5df2\u66f4\u6539\uff0c\u786e\u5b9a\u5173\u95ed\uff1f&quot;,&quot;yes&quot;:&quot;\u662f&quot;,&quot;no&quot;:&quot;\u5426&quot;};&lt;/script&gt;
+&lt;/head&gt;
+&lt;body class=&quot;m-attend-personalsettings entry-oa&quot;&gt;
+&lt;style&gt;body {padding-top: 58px}&lt;/style&gt;
+&lt;nav class=&quot;navbar navbar-main navbar-fixed-top&quot; role=&quot;navigation&quot; id=&quot;mainNavbar&quot;&gt;
+  &lt;div class=&quot;navbar-header&quot;&gt;
+    &lt;a href=&quot;/ranzhi/oa/index.html&quot; class=&quot;navbar-brand&quot;&gt;日常办公&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/dashboard/&quot;&gt;首页&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/my-review.html&quot;&gt;审批&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/announce-browse.html&quot;&gt;公告&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/attend-personal.html&quot;&gt;考勤&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/leave-personal.html&quot;&gt;请假&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/makeup-personal.html&quot;&gt;补班&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/overtime-personal.html&quot;&gt;加班&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/lieu-personal.html&quot;&gt;调休&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/trip-personal.html&quot;&gt;出差&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/egress-personal.html&quot;&gt;外出&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/refund-personal.html&quot;&gt;报销&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/holiday-browse.html&quot;&gt;节假日&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;/ranzhi/oa/setting-modules-oa.html&quot;&gt;设置&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;nav id=&quot;menu&quot;&gt;&lt;ul class=&quot;nav&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/setting-modules-oa.html&quot;&gt;功能模块&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/attend-settings-setting.html&quot;&gt;公司考勤设置&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;/ranzhi/oa/attend-personalSettings-setting.html&quot;&gt;个人考勤设置&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/attend-setManager-setting.html&quot;&gt;部门经理设置&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/leave-setReviewer-setting.html&quot;&gt;请假审批人&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/makeup-setReviewer-setting.html&quot;&gt;补班审批人&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/lieu-setReviewer-setting.html&quot;&gt;调休审批人&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/overtime-setReviewer-setting.html&quot;&gt;加班审批人&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/refund-setReviewer-setting.html&quot;&gt;报销审批人&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/refund-setCategory-setting.html&quot;&gt;报销科目&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/refund-setDepositor-setting.html&quot;&gt;报销账户&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/ranzhi/oa/refund-setRefundBy-setting.html&quot;&gt;由谁报销&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/nav&gt;
+
+&lt;div class=&quot;row page-content with-menu&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/ranzhi/js/jquery/chosen/min.css?v=4.5&quot; type=&quot;text/css&quot; media=&quot;screen&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/ranzhi/js/jquery/chosen/min.css?v=4.5&quot; type=&quot;text/css&quot; media=&quot;print&quot;&gt;
+&lt;script src=&quot;/ranzhi/js/jquery/chosen/min.js?v=4.5&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;; expected Value is :第一审批人和第二审批人
+	at com.webtest.core.Checker.verify(Checker.java:55)
+	at com.webtest.core.Checker.verifyHtmlSource(Checker.java:62)
+	at com.test.Shezhi.piren(Shezhi.java:74)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.test.DayWork</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="delqu">
+                  </a> <!-- delqu -->
+                  <span class="method-name">delqu</span>
+                  <div class="stack-trace">org.openqa.selenium.NoAlertPresentException: No modal dialog is currently open
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.254.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\pc\AppData\Local\Temp\rust_mozprofile.2EM5oxYyXH28, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0.3, platformVersion=10.0, moz:processID=2320, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 51574e14-5801-45d5-9373-3b4a6be9e329
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:972)
+	at com.webtest.core.WebDriverEngine.getAlert(WebDriverEngine.java:209)
+	at com.test.DayWork.delqu(DayWork.java:49)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="zkaoqin3">
+                  </a> <!-- zkaoqin3 -->
+                  <span class="method-name">zkaoqin3</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: 
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.254.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\pc\AppData\Local\Temp\rust_mozprofile.2EM5oxYyXH28, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0.3, platformVersion=10.0, moz:processID=2320, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 51574e14-5801-45d5-9373-3b4a6be9e329
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.webtest.core.WebDriverEngine.click(WebDriverEngine.java:139)
+	at com.test.DayWork.zkaoqin3(DayWork.java:95)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.test.Tuandui</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="delbo">
+                  </a> <!-- delbo -->
+                  <span class="method-name">delbo</span>
+                  <div class="stack-trace">org.openqa.selenium.NoAlertPresentException: No modal dialog is currently open
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.254.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\pc\AppData\Local\Temp\rust_mozprofile.44pTJbrnGuf2, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0.3, platformVersion=10.0, moz:processID=1420, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 85368e41-79a2-4e40-bc81-244c1d9ba929
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:972)
+	at com.webtest.core.WebDriverEngine.getAlert(WebDriverEngine.java:209)
+	at com.test.Tuandui.delbo(Tuandui.java:137)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="delzikuai">
+                  </a> <!-- delzikuai -->
+                  <span class="method-name">delzikuai</span>
+                  <div class="stack-trace">org.openqa.selenium.NoAlertPresentException: No modal dialog is currently open
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.254.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\pc\AppData\Local\Temp\rust_mozprofile.44pTJbrnGuf2, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0.3, platformVersion=10.0, moz:processID=1420, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 85368e41-79a2-4e40-bc81-244c1d9ba929
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:972)
+	at com.webtest.core.WebDriverEngine.getAlert(WebDriverEngine.java:209)
+	at com.test.Tuandui.delzikuai(Tuandui.java:114)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findbo">
+                  </a> <!-- findbo -->
+                  <span class="method-name">findbo</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.test.Tuandui.findbo(Tuandui.java:59)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.test.Buban</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="abuban">
+                  </a> <!-- abuban -->
+                  <span class="method-name">abuban</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchFrameException: No frame element found by name or id iframe-2
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.254.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:925)
+	at com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:59)
+	at com.test.Buban.abuban(Buban.java:27)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.test.Buban</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="abuban12">
+                  </a> <!-- abuban12 -->
+                  <span class="method-name">abuban12</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Buban.abuban12()[pri:0, instance:com.test.Buban@2d6a9952] depends on not successfully finished methods
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="achabu">
+                  </a> <!-- achabu -->
+                  <span class="method-name">achabu</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Buban.achabu()[pri:0, instance:com.test.Buban@2d6a9952] depends on not successfully finished methods
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="zengbu1">
+                  </a> <!-- zengbu1 -->
+                  <span class="method-name">zengbu1</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Buban.zengbu1()[pri:0, instance:com.test.Buban@2d6a9952] depends on not successfully finished methods
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="zengbu2">
+                  </a> <!-- zengbu2 -->
+                  <span class="method-name">zengbu2</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Buban.zengbu2()[pri:0, instance:com.test.Buban@2d6a9952] depends on not successfully finished methods
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="zengbu3">
+                  </a> <!-- zengbu3 -->
+                  <span class="method-name">zengbu3</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Buban.zengbu3()[pri:0, instance:com.test.Buban@2d6a9952] depends on not successfully finished methods
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Buban</span>
+              <span class="class-name">com.test.Qingjia</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -142,9 +831,245 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="addbu3">
-                  </a> <!-- addbu3 -->
-                  <span class="method-name">addbu3</span>
+                  <a name="accqing">
+                  </a> <!-- accqing -->
+                  <span class="method-name">accqing</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addqing">
+                  </a> <!-- addqing -->
+                  <span class="method-name">addqing</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="arrqing">
+                  </a> <!-- arrqing -->
+                  <span class="method-name">arrqing</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="delqing">
+                  </a> <!-- delqing -->
+                  <span class="method-name">delqing</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="qingjia">
+                  </a> <!-- qingjia -->
+                  <span class="method-name">qingjia</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.yemiantest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="zhen">
+                  </a> <!-- zhen -->
+                  <span class="method-name">zhen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.Shezhi</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Mykaoqin">
+                  </a> <!-- Mykaoqin -->
+                  <span class="method-name">Mykaoqin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="gekao">
+                  </a> <!-- gekao -->
+                  <span class="method-name">gekao</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="gongkao">
+                  </a> <!-- gongkao -->
+                  <span class="method-name">gongkao</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shenpiren">
+                  </a> <!-- shenpiren -->
+                  <span class="method-name">shenpiren</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.DayWork</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Mykaoqin">
+                  </a> <!-- Mykaoqin -->
+                  <span class="method-name">Mykaoqin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addqu">
+                  </a> <!-- addqu -->
+                  <span class="method-name">addqu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bianqu">
+                  </a> <!-- bianqu -->
+                  <span class="method-name">bianqu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fresh2">
+                  </a> <!-- fresh2 -->
+                  <span class="method-name">fresh2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="kaoqin1">
+                  </a> <!-- kaoqin1 -->
+                  <span class="method-name">kaoqin1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="kaoqin2">
+                  </a> <!-- kaoqin2 -->
+                  <span class="method-name">kaoqin2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="kaoqin4">
+                  </a> <!-- kaoqin4 -->
+                  <span class="method-name">kaoqin4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.Tuandui</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addzikuai">
+                  </a> <!-- addzikuai -->
+                  <span class="method-name">addzikuai</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bianbo">
+                  </a> <!-- bianbo -->
+                  <span class="method-name">bianbo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bianqu">
+                  </a> <!-- bianqu -->
+                  <span class="method-name">bianqu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bianzikuai">
+                  </a> <!-- bianzikuai -->
+                  <span class="method-name">bianzikuai</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="company">
+                  </a> <!-- company -->
+                  <span class="method-name">company</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="qukuai">
+                  </a> <!-- qukuai -->
+                  <span class="method-name">qukuai</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="soutong">
+                  </a> <!-- soutong -->
+                  <span class="method-name">soutong</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.Tiaoxiu</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Mykaoqin">
+                  </a> <!-- Mykaoqin -->
+                  <span class="method-name">Mykaoqin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addbu1">
+                  </a> <!-- addbu1 -->
+                  <span class="method-name">addbu1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addbu2">
+                  </a> <!-- addbu2 -->
+                  <span class="method-name">addbu2</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -154,124 +1079,635 @@
                   <span class="method-name">buban</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="chebu">
+                  </a> <!-- chebu -->
+                  <span class="method-name">chebu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shenzhe">
+                  </a> <!-- shenzhe -->
+                  <span class="method-name">shenzhe</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tiaoxiu">
+                  </a> <!-- tiaoxiu -->
+                  <span class="method-name">tiaoxiu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.Buban</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Mykaoqin">
+                  </a> <!-- Mykaoqin -->
+                  <span class="method-name">Mykaoqin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="zengbu4">
+                  </a> <!-- zengbu4 -->
+                  <span class="method-name">zengbu4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\pc\AppData\Local\Temp\testng-eclipse-2143771732\testng-customsuite.xml</span>
+            <span class="header-content">G:\eclipse\auto2017\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.utils.listener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Buban&quot;/&gt;
+      &lt;class name=&quot;com.test.yemiantest&quot;/&gt;
+      &lt;class name=&quot;com.test.Buban&quot;/&gt;
+      &lt;class name=&quot;com.test.DayWork&quot;/&gt;
+      &lt;class name=&quot;com.test.Qingjia&quot;/&gt;
+      &lt;class name=&quot;com.test.Tuandui&quot;/&gt;
+      &lt;class name=&quot;com.test.Shezhi&quot;/&gt;
+      &lt;class name=&quot;com.test.Tiaoxiu&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (7 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(51);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addbu3')
-data.setCell(0, 2, 'Buban')
-data.setCell(0, 3, 7434);
+data.setCell(0, 1, 'Mykaoqin')
+data.setCell(0, 2, 'com.test.DayWork')
+data.setCell(0, 3, 22582);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'buban')
-data.setCell(1, 2, 'Buban')
-data.setCell(1, 3, 6642);
+data.setCell(1, 1, 'zengbu4')
+data.setCell(1, 2, 'com.test.Buban')
+data.setCell(1, 3, 22518);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Mykaoqin')
-data.setCell(2, 2, 'Buban')
-data.setCell(2, 3, 3523);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(2, 1, 'addbu1')
+data.setCell(2, 2, 'com.test.Tiaoxiu')
+data.setCell(2, 3, 18963);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Mykaoqin')
+data.setCell(3, 2, 'com.test.Buban')
+data.setCell(3, 3, 17875);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'qukuai')
+data.setCell(4, 2, 'com.test.Tuandui')
+data.setCell(4, 3, 17059);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'accqing')
+data.setCell(5, 2, 'com.test.Qingjia')
+data.setCell(5, 3, 16807);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'login')
+data.setCell(6, 2, 'com.test.Tiaoxiu')
+data.setCell(6, 3, 16679);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'addqing')
+data.setCell(7, 2, 'com.test.Qingjia')
+data.setCell(7, 3, 15307);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Mykaoqin')
+data.setCell(8, 2, 'com.test.Shezhi')
+data.setCell(8, 3, 13883);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'kaoqin2')
+data.setCell(9, 2, 'com.test.DayWork')
+data.setCell(9, 3, 13805);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'bianqu')
+data.setCell(10, 2, 'com.test.DayWork')
+data.setCell(10, 3, 12827);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'gongkao')
+data.setCell(11, 2, 'com.test.Shezhi')
+data.setCell(11, 3, 12781);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'bianqu')
+data.setCell(12, 2, 'com.test.Tuandui')
+data.setCell(12, 3, 12644);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'login')
+data.setCell(13, 2, 'com.test.Qingjia')
+data.setCell(13, 3, 12510);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'shenpiren')
+data.setCell(14, 2, 'com.test.Shezhi')
+data.setCell(14, 3, 11855);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'shenzhe')
+data.setCell(15, 2, 'com.test.Tiaoxiu')
+data.setCell(15, 3, 11484);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'arrqing')
+data.setCell(16, 2, 'com.test.Qingjia')
+data.setCell(16, 3, 11457);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'kaoqin1')
+data.setCell(17, 2, 'com.test.DayWork')
+data.setCell(17, 3, 11220);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'addbu2')
+data.setCell(18, 2, 'com.test.Tiaoxiu')
+data.setCell(18, 3, 11047);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'zkaoqin3')
+data.setCell(19, 2, 'com.test.DayWork')
+data.setCell(19, 3, 11023);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'kaoqin4')
+data.setCell(20, 2, 'com.test.DayWork')
+data.setCell(20, 3, 10994);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'addqu')
+data.setCell(21, 2, 'com.test.DayWork')
+data.setCell(21, 3, 10392);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'login')
+data.setCell(22, 2, 'com.test.Tuandui')
+data.setCell(22, 3, 10271);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'qingjia')
+data.setCell(23, 2, 'com.test.Qingjia')
+data.setCell(23, 3, 10260);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'gekao')
+data.setCell(24, 2, 'com.test.Shezhi')
+data.setCell(24, 3, 8898);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'addzikuai')
+data.setCell(25, 2, 'com.test.Tuandui')
+data.setCell(25, 3, 8304);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'bianbo')
+data.setCell(26, 2, 'com.test.Tuandui')
+data.setCell(26, 3, 8180);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'soutong')
+data.setCell(27, 2, 'com.test.Tuandui')
+data.setCell(27, 3, 7722);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'buban')
+data.setCell(28, 2, 'com.test.Tiaoxiu')
+data.setCell(28, 3, 7183);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'zhen')
+data.setCell(29, 2, 'com.test.yemiantest')
+data.setCell(29, 3, 7079);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'delqing')
+data.setCell(30, 2, 'com.test.Qingjia')
+data.setCell(30, 3, 6869);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'chebu')
+data.setCell(31, 2, 'com.test.Tiaoxiu')
+data.setCell(31, 3, 6704);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'bianzikuai')
+data.setCell(32, 2, 'com.test.Tuandui')
+data.setCell(32, 3, 5436);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'findbo')
+data.setCell(33, 2, 'com.test.Tuandui')
+data.setCell(33, 3, 5017);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'delbo')
+data.setCell(34, 2, 'com.test.Tuandui')
+data.setCell(34, 3, 3730);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'company')
+data.setCell(35, 2, 'com.test.Tuandui')
+data.setCell(35, 3, 3620);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'fresh2')
+data.setCell(36, 2, 'com.test.DayWork')
+data.setCell(36, 3, 3583);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'tiaoxiu')
+data.setCell(37, 2, 'com.test.Tiaoxiu')
+data.setCell(37, 3, 3457);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'Mykaoqin')
+data.setCell(38, 2, 'com.test.Qingjia')
+data.setCell(38, 3, 3409);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'Mykaoqin')
+data.setCell(39, 2, 'com.test.Tiaoxiu')
+data.setCell(39, 3, 3400);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'abuban')
+data.setCell(40, 2, 'com.test.Buban')
+data.setCell(40, 3, 3024);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'baoxiao')
+data.setCell(41, 2, 'com.test.Shezhi')
+data.setCell(41, 3, 404);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'piren')
+data.setCell(42, 2, 'com.test.Shezhi')
+data.setCell(42, 3, 198);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'delzikuai')
+data.setCell(43, 2, 'com.test.Tuandui')
+data.setCell(43, 3, 162);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'kemu')
+data.setCell(44, 2, 'com.test.Shezhi')
+data.setCell(44, 3, 48);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'delqu')
+data.setCell(45, 2, 'com.test.DayWork')
+data.setCell(45, 3, 43);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'achabu')
+data.setCell(46, 2, 'com.test.Buban')
+data.setCell(46, 3, 0);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'zengbu1')
+data.setCell(47, 2, 'com.test.Buban')
+data.setCell(47, 3, 0);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'abuban12')
+data.setCell(48, 2, 'com.test.Buban')
+data.setCell(48, 3, 0);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'zengbu2')
+data.setCell(49, 2, 'com.test.Buban')
+data.setCell(49, 3, 0);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'zengbu3')
+data.setCell(50, 2, 'com.test.Buban')
+data.setCell(50, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 7 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Buban</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
+              <div class="chronological-class-name">com.test.yemiantest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
                 <span class="method-name">doBeforeMethod</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
-                <span class="method-name">login</span>
-                <span class="method-start">11202 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupBrowser</span>
+                <span class="method-start">23099 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">zhen</span>
+                <span class="method-start">52954 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">60033 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.Buban</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeMethod</span>
+                <span class="method-start">73158 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">Mykaoqin</span>
-                <span class="method-start">22661 ms</span>
+                <span class="method-start">81392 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">zengbu4</span>
+                <span class="method-start">99267 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">abuban</span>
+                <span class="method-start">121786 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">124812 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.DayWork</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeMethod</span>
+                <span class="method-start">134694 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Mykaoqin</span>
+                <span class="method-start">142878 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addqu</span>
+                <span class="method-start">165461 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bianqu</span>
+                <span class="method-start">175854 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">fresh2</span>
+                <span class="method-start">188681 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">kaoqin1</span>
+                <span class="method-start">192264 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">delqu</span>
+                <span class="method-start">203485 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">kaoqin2</span>
+                <span class="method-start">203528 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">kaoqin4</span>
+                <span class="method-start">217334 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">zkaoqin3</span>
+                <span class="method-start">228328 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">239351 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.Qingjia</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeMethod</span>
+                <span class="method-start">242533 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">250707 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Mykaoqin</span>
+                <span class="method-start">263217 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">qingjia</span>
+                <span class="method-start">266626 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addqing</span>
+                <span class="method-start">276887 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">accqing</span>
+                <span class="method-start">292194 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">delqing</span>
+                <span class="method-start">309001 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">arrqing</span>
+                <span class="method-start">315870 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">327327 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.Tuandui</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeMethod</span>
+                <span class="method-start">330465 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">337131 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">qukuai</span>
+                <span class="method-start">347402 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bianqu</span>
+                <span class="method-start">364461 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">findbo</span>
+                <span class="method-start">377106 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">soutong</span>
+                <span class="method-start">382124 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">company</span>
+                <span class="method-start">389846 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addzikuai</span>
+                <span class="method-start">393466 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bianzikuai</span>
+                <span class="method-start">401770 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">delzikuai</span>
+                <span class="method-start">407207 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">delbo</span>
+                <span class="method-start">407369 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bianbo</span>
+                <span class="method-start">411099 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">419280 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.Shezhi</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeMethod</span>
+                <span class="method-start">422033 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Mykaoqin</span>
+                <span class="method-start">430254 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">gongkao</span>
+                <span class="method-start">444137 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">baoxiao</span>
+                <span class="method-start">456919 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">gekao</span>
+                <span class="method-start">457323 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">kemu</span>
+                <span class="method-start">466221 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">piren</span>
+                <span class="method-start">466270 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shenpiren</span>
+                <span class="method-start">466468 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">478323 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.Tiaoxiu</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeMethod</span>
+                <span class="method-start">488437 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">495565 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Mykaoqin</span>
+                <span class="method-start">512244 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">buban</span>
-                <span class="method-start">26188 ms</span>
+                <span class="method-start">515644 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">addbu3</span>
-                <span class="method-start">32832 ms</span>
+                <span class="method-name">addbu1</span>
+                <span class="method-start">522827 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addbu2</span>
+                <span class="method-start">541790 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">chebu</span>
+                <span class="method-start">552837 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tiaoxiu</span>
+                <span class="method-start">559541 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shenzhe</span>
+                <span class="method-start">562998 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">574482 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

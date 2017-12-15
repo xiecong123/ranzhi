@@ -1,17 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.utils.listener"/>
+  </listeners>
+  <test name="Test(failed)">
     <classes>
-      <class name="Buban">
+      <class name="com.test.yemiantest">
         <methods>
-          <include name="Mykaoqin"/>
-          <include name="buban"/>
-          <include name="addbu"/>
-          <include name="login"/>
+          <include name="setupBrowser"/>
+          <include name="doAfterMethod"/>
           <include name="doBeforeMethod"/>
         </methods>
-      </class> <!-- Buban -->
+      </class> <!-- com.test.yemiantest -->
+      <class name="com.test.Qingjia">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="doBeforeMethod"/>
+        </methods>
+      </class> <!-- com.test.Qingjia -->
+      <class name="com.test.Shezhi">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="piren"/>
+          <include name="gongkao"/>
+          <include name="baoxiao"/>
+          <include name="kemu"/>
+          <include name="Mykaoqin"/>
+          <include name="doBeforeMethod"/>
+        </methods>
+      </class> <!-- com.test.Shezhi -->
+      <class name="com.test.DayWork">
+        <methods>
+          <include name="Mykaoqin"/>
+          <include name="doAfterMethod"/>
+          <include name="delqu"/>
+          <include name="zkaoqin3"/>
+          <include name="addqu"/>
+          <include name="kaoqin1"/>
+          <include name="doBeforeMethod"/>
+        </methods>
+      </class> <!-- com.test.DayWork -->
+      <class name="com.test.Tuandui">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="findbo"/>
+          <include name="delbo"/>
+          <include name="delzikuai"/>
+          <include name="doBeforeMethod"/>
+        </methods>
+      </class> <!-- com.test.Tuandui -->
+      <class name="com.test.Buban">
+        <methods>
+          <include name="zengbu1"/>
+          <include name="Mykaoqin"/>
+          <include name="achabu"/>
+          <include name="doAfterMethod"/>
+          <include name="abuban12"/>
+          <include name="zengbu3"/>
+          <include name="zengbu2"/>
+          <include name="abuban"/>
+          <include name="doBeforeMethod"/>
+        </methods>
+      </class> <!-- com.test.Buban -->
+      <class name="com.test.Tiaoxiu">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="doBeforeMethod"/>
+        </methods>
+      </class> <!-- com.test.Tiaoxiu -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
